@@ -31,6 +31,10 @@ and outputs json
 
     z = Zendesk::Main.new('subdomain', 'username', 'password', :format => 'json')
 
+Set the api version:
+
+    z = Zendesk::Main.new('subdomain', 'username', 'password', :format => 'json', :api_version => 'v1')
+
 ### Show
 
     z.get_function_name(user_id)
